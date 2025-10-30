@@ -1,1 +1,5 @@
 db.ecommerce_orders.find({order_date: { $gt: ISODate("2025-02-01T00:00:00Z") }}).explain("executionStats").executionStats.executionStages;
+
+db.ecommerce_orders.createIndex({ order_date: 1 });
+
+db.ecommerce_orders.find({order_date: { $gt: ISODate("2025-02-01T00:00:00Z") }}).explain("executionStats").executionStats.executionStages;
