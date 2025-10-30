@@ -1,0 +1,3 @@
+db.students.find({ course: "Computer Science" }).explain("executionStats").executionStats;
+db.students.createIndex({ student_id: 1 });
+db.students.find({ course: "Computer Science" }).explain("executionStats").executionStats;
