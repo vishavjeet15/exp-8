@@ -1,0 +1,2 @@
+db.articles.createIndex({ author: 1, published_date: -1 });
+db.articles.find({author: "Riya Sharma",}).sort({ published_date: -1 });
