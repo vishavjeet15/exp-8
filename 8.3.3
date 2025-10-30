@@ -1,0 +1,11 @@
+db.ecommerce_orders.insertOne({
+  _id: "O1001",
+  customer: {
+    customer_id: "C001",
+    name: "Amar Singh",
+    email: "amar.singh@email.com"
+  },
+  items: [{ product: "Laptop", quantity: 1, price: 75000 }],
+  status: "Pending",
+  order_date: ISODate("2025-01-10T00:00:00Z")
+})
