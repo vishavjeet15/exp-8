@@ -1,0 +1,2 @@
+db.ecommerce_orders.createIndex({ customer_id: 1, status: 1 });
+db.ecommerce_orders.find({ customer_id: "C001", status: "Shipped" });
