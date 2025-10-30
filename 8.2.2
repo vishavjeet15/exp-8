@@ -1,0 +1,2 @@
+db.articles.createIndex({ title: "text", tags: "text" });
+db.articles.find({ $text: { $search: "blockchain" } });
